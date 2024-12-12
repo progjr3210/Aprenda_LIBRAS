@@ -9,28 +9,34 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="./assets/js/scripts.js" defer></script>
 </head>
 
 <body>
-    <!-- Navegação -->
-    <nav class="navbar">
-        <div class="container">
-            <!-- Logo -->
-            <img src="./assets/images/logos/libras.svg" alt="Logo Aprenda LIBRAS" class="logo">
-
-            <!-- Título -->
-            <h1>Aprenda LIBRAS</h1>
-
-            <!-- Links de navegação -->
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#aulas">Aulas</a></li>
-                <li><a href="#dicas">Dicas</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
+        <!-- Navegação -->
+        <nav class="navbar">
+            <div class="container">
+                <!-- Logo -->
+                <img src="./assets/images/logos/libras.svg" alt="Logo Aprenda LIBRAS" class="logo">
+    
+                <!-- Título -->
+                <h1>Aprenda LIBRAS</h1>
+    
+                <!-- Ícone Hamburger -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i id="hamburger-icon" class="fas fa-bars"></i>
+                </div>
+    
+                <!-- Links de navegação -->
+                <ul id="nav-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#aulas">Aulas</a></li>
+                    <li><a href="#dicas">Dicas</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
 
     <!-- Banner -->
     <header class="parallax">

@@ -1,25 +1,182 @@
-/* Responsividade */
+/* Media Queries para dispositivos móveis */
 @media (max-width: 768px) {
-  .tips-container {
-    grid-template-columns: 1fr;
+  /* Navbar */
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens */
+    padding: 20px 0;
   }
 
+  .navbar .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar .logo {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+
+  .navbar h1 {
+    font-size: 1.2rem;
+  }
+
+  /* Banner */
+  .parallax {
+    background-attachment: scroll;
+    height: 60vh;
+  }
+
+  .parallax h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  /* Sobre */
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Aulas Interativas */
   .videos-container {
     flex-direction: column;
     align-items: center;
   }
 
+  .video-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Dicas de Aprendizado */
+  .tips-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Depoimentos */
   .testimonial-slider {
     flex-direction: column;
     align-items: center;
   }
 
-  .footer-content {
+  /* Contato */
+  .contact form {
+    display: flex;
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact .form-group input,
+  .contact .form-group textarea {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .contact .btn-submit {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
   }
 
   .footer-section {
+    width: 100%;
     text-align: center;
+  }
+}
+
+.banner {
+    height: 250px; /* Diminui a altura do banner */
+    background-position: center; /* Ajusta a posição do fundo */
+    background-size: cover; /* Garante que o fundo cubra toda a área */
+  }
+
+  .banner h1 {
+    font-size: 2em; /* Reduz o tamanho da fonte do título */
+    text-align: center; /* Alinha o texto ao centro */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .sobre, .aulas-interativas, .dicas, .depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  form input, form textarea {
+    width: 100%;
+    padding: 12px; /* Aumenta o padding */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  /* Ajustes de imagens */
+  img {
+    max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho da tela */
+    height: auto;
+  }
+
+  /* Seções com vários itens (Dicas, Depoimentos) */
+  .dicas .item, .depoimentos .item {
+    width: 100%; /* Garante que cada item ocupe toda a largura disponível */
+    margin-bottom: 20px;
+  }
+
+/* Ajustes adicionais para telas ainda menores (ex: smartphones verticais) */
+@media (max-width: 480px) {
+  /* Navbar: ajuste de espaçamento */
+  .navbar {
+    padding: 15px 0;
+  }
+
+  /* Banner: ajuste do texto e altura */
+  .banner {
+    height: 200px; /* Diminui ainda mais a altura */
+  }
+
+  .banner h1 {
+    font-size: 1.5em; /* Reduz ainda mais o tamanho do texto */
+  }
+
+  /* Formulários: ajuste no tamanho das fontes */
+  form input, form textarea {
+    font-size: 14px; /* Ajusta para um tamanho mais confortável */
   }
 }

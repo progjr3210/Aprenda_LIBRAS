@@ -41,3 +41,64 @@
 .navbar ul li a:hover {
   color: #1e90ff;
 }
+
+/* Navbar - Hamburger */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem; /* Aumenta o tamanho do ícone */
+    color: #fff;
+    position: absolute; /* Posiciona o ícone */
+    top: 20px; /* Ajuste a altura se necessário */
+    right: 20px; /* Posiciona o ícone no canto direito */
+}
+
+/* Outras regras seguem sem alterações */
+#nav-links {
+    display: flex;
+}
+
+#nav-links li {
+    margin-left: 20px;
+}
+
+#nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.3s;
+}
+
+#nav-links li a:hover {
+    color: #1e90ff;
+}
+
+/* Responsividade - Quando a tela for menor que 768px */
+@media (max-width: 768px) {
+    /* Esconde o menu */
+    #nav-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: #121212;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding-top: 10px;
+    }
+
+    /* Exibe o hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    /* Exibe o menu ao clicar */
+    #nav-links.active {
+        display: block;
+    }
+
+    #nav-links li {
+        margin: 15px 0;
+    }
+}
+
