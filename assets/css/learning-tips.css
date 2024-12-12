@@ -1,0 +1,61 @@
+/* Seção Dicas de Aprendizado */
+.learning-tips {
+  background-color: #121212;
+  color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.learning-tips h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1e90ff;
+}
+
+.learning-tips p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.tips-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tip-card {
+  background-color: #1f1f1f;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tip-card h3 {
+  font-size: 1.8rem;
+  color: #1e90ff;
+  margin-bottom: 15px;
+}
+
+.tip-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.tip-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .tips-container {
+    grid-template-columns: 1fr;
+  }
+}

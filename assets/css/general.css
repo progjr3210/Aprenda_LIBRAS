@@ -1,0 +1,13 @@
+/* Estilos gerais */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #f4f4f4;
+  background-color: #121212;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
